@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F01B67529D11DBE00E56E2A /* RECIMEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B67429D11DBE00E56E2A /* RECIMEApp.swift */; };
+		4F01B67729D11DBE00E56E2A /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B67629D11DBE00E56E2A /* RecipeListView.swift */; };
+		4F01B67929D11DBF00E56E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B67829D11DBF00E56E2A /* Assets.xcassets */; };
+		4F01B67C29D11DBF00E56E2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F01B67B29D11DBF00E56E2A /* Preview Assets.xcassets */; };
+		4F01B68629D11DBF00E56E2A /* RECIMETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B68529D11DBF00E56E2A /* RECIMETests.swift */; };
+		4F01B69029D11DBF00E56E2A /* RECIMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B68F29D11DBF00E56E2A /* RECIMEUITests.swift */; };
+		4F01B69229D11DBF00E56E2A /* RECIMEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B69129D11DBF00E56E2A /* RECIMEUITestsLaunchTests.swift */; };
+		4F01B69F29D1514900E56E2A /* RecipeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01B69E29D1514900E56E2A /* RecipeViewCell.swift */; };
+		4F9A2F4429D1656F009B6E94 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4F9A2F4329D1656F009B6E94 /* Kingfisher */; };
+		4F9A2F4C29D16D14009B6E94 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A2F4B29D16D14009B6E94 /* RecipeListViewModel.swift */; };
+		4F9A2F4E29D17008009B6E94 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F9A2F4D29D17008009B6E94 /* recipes.json */; };
+		4F9A2F5229D17104009B6E94 /* DecoderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A2F5129D17104009B6E94 /* DecoderHelper.swift */; };
+		4F9A2F5429D1722F009B6E94 /* ReviewListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A2F5329D1722F009B6E94 /* ReviewListService.swift */; };
+		4F9A2F5629D17417009B6E94 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A2F5529D17417009B6E94 /* Recipe.swift */; };
+		4F9A2F5829D17D23009B6E94 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A2F5729D17D23009B6E94 /* ViewState.swift */; };
+		4F9A2F5A29D1837B009B6E94 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A2F5929D1837B009B6E94 /* SpinnerView.swift */; };
+		4F9A2F5F29D192E5009B6E94 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A2F5E29D192E5009B6E94 /* Difficulty.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F01B68229D11DBF00E56E2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F01B66929D11DBE00E56E2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F01B67029D11DBE00E56E2A;
+			remoteInfo = RECIME;
+		};
+		4F01B68C29D11DBF00E56E2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F01B66929D11DBE00E56E2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F01B67029D11DBE00E56E2A;
+			remoteInfo = RECIME;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F01B67129D11DBE00E56E2A /* RECIME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RECIME.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F01B67429D11DBE00E56E2A /* RECIMEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RECIMEApp.swift; sourceTree = "<group>"; };
+		4F01B67629D11DBE00E56E2A /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
+		4F01B67829D11DBF00E56E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F01B67B29D11DBF00E56E2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F01B68129D11DBF00E56E2A /* RECIMETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RECIMETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F01B68529D11DBF00E56E2A /* RECIMETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RECIMETests.swift; sourceTree = "<group>"; };
+		4F01B68B29D11DBF00E56E2A /* RECIMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RECIMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F01B68F29D11DBF00E56E2A /* RECIMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RECIMEUITests.swift; sourceTree = "<group>"; };
+		4F01B69129D11DBF00E56E2A /* RECIMEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RECIMEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F01B69E29D1514900E56E2A /* RecipeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewCell.swift; sourceTree = "<group>"; };
+		4F9A2F4B29D16D14009B6E94 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		4F9A2F4D29D17008009B6E94 /* recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		4F9A2F5129D17104009B6E94 /* DecoderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderHelper.swift; sourceTree = "<group>"; };
+		4F9A2F5329D1722F009B6E94 /* ReviewListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListService.swift; sourceTree = "<group>"; };
+		4F9A2F5529D17417009B6E94 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		4F9A2F5729D17D23009B6E94 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		4F9A2F5929D1837B009B6E94 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		4F9A2F5E29D192E5009B6E94 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F01B66E29D11DBE00E56E2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9A2F4429D1656F009B6E94 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F01B67E29D11DBF00E56E2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F01B68829D11DBF00E56E2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F01B66829D11DBE00E56E2A = {
+			isa = PBXGroup;
+			children = (
+				4F01B67329D11DBE00E56E2A /* RECIME */,
+				4F01B68429D11DBF00E56E2A /* RECIMETests */,
+				4F01B68E29D11DBF00E56E2A /* RECIMEUITests */,
+				4F01B67229D11DBE00E56E2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F01B67229D11DBE00E56E2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B67129D11DBE00E56E2A /* RECIME.app */,
+				4F01B68129D11DBF00E56E2A /* RECIMETests.xctest */,
+				4F01B68B29D11DBF00E56E2A /* RECIMEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F01B67329D11DBE00E56E2A /* RECIME */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A2F5D29D192D6009B6E94 /* Enums */,
+				4F9A2F5029D170ED009B6E94 /* Helpers */,
+				4F9A2F4F29D170E2009B6E94 /* Services */,
+				4F9A2F4829D16A0E009B6E94 /* Models */,
+				4F9A2F4729D169FE009B6E94 /* ViewModels */,
+				4F9A2F4629D169C1009B6E94 /* Views */,
+				4F9A2F4529D169B4009B6E94 /* Common */,
+				4F01B67829D11DBF00E56E2A /* Assets.xcassets */,
+				4F01B67A29D11DBF00E56E2A /* Preview Content */,
+				4F9A2F4D29D17008009B6E94 /* recipes.json */,
+			);
+			path = RECIME;
+			sourceTree = "<group>";
+		};
+		4F01B67A29D11DBF00E56E2A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B67B29D11DBF00E56E2A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F01B68429D11DBF00E56E2A /* RECIMETests */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B68529D11DBF00E56E2A /* RECIMETests.swift */,
+			);
+			path = RECIMETests;
+			sourceTree = "<group>";
+		};
+		4F01B68E29D11DBF00E56E2A /* RECIMEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B68F29D11DBF00E56E2A /* RECIMEUITests.swift */,
+				4F01B69129D11DBF00E56E2A /* RECIMEUITestsLaunchTests.swift */,
+			);
+			path = RECIMEUITests;
+			sourceTree = "<group>";
+		};
+		4F9A2F4529D169B4009B6E94 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B67429D11DBE00E56E2A /* RECIMEApp.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4F9A2F4629D169C1009B6E94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A2F4A29D16A60009B6E94 /* SpinnerView */,
+				4F9A2F4929D16A38009B6E94 /* Recipes */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4F9A2F4729D169FE009B6E94 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A2F4B29D16D14009B6E94 /* RecipeListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4F9A2F4829D16A0E009B6E94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A2F5529D17417009B6E94 /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F9A2F4929D16A38009B6E94 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				4F01B69E29D1514900E56E2A /* RecipeViewCell.swift */,
+				4F01B67629D11DBE00E56E2A /* RecipeListView.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		4F9A2F4A29D16A60009B6E94 /* SpinnerView */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A2F5929D1837B009B6E94 /* SpinnerView.swift */,
+			);
+			path = SpinnerView;
+			sourceTree = "<group>";
+		};
+		4F9A2F4F29D170E2009B6E94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A2F5329D1722F009B6E94 /* ReviewListService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4F9A2F5029D170ED009B6E94 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A2F5129D17104009B6E94 /* DecoderHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4F9A2F5D29D192D6009B6E94 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4F9A2F5729D17D23009B6E94 /* ViewState.swift */,
+				4F9A2F5E29D192E5009B6E94 /* Difficulty.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F01B67029D11DBE00E56E2A /* RECIME */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F01B69529D11DBF00E56E2A /* Build configuration list for PBXNativeTarget "RECIME" */;
+			buildPhases = (
+				4F01B66D29D11DBE00E56E2A /* Sources */,
+				4F01B66E29D11DBE00E56E2A /* Frameworks */,
+				4F01B66F29D11DBE00E56E2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RECIME;
+			packageProductDependencies = (
+				4F9A2F4329D1656F009B6E94 /* Kingfisher */,
+			);
+			productName = RECIME;
+			productReference = 4F01B67129D11DBE00E56E2A /* RECIME.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F01B68029D11DBF00E56E2A /* RECIMETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F01B69829D11DBF00E56E2A /* Build configuration list for PBXNativeTarget "RECIMETests" */;
+			buildPhases = (
+				4F01B67D29D11DBF00E56E2A /* Sources */,
+				4F01B67E29D11DBF00E56E2A /* Frameworks */,
+				4F01B67F29D11DBF00E56E2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F01B68329D11DBF00E56E2A /* PBXTargetDependency */,
+			);
+			name = RECIMETests;
+			productName = RECIMETests;
+			productReference = 4F01B68129D11DBF00E56E2A /* RECIMETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F01B68A29D11DBF00E56E2A /* RECIMEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F01B69B29D11DBF00E56E2A /* Build configuration list for PBXNativeTarget "RECIMEUITests" */;
+			buildPhases = (
+				4F01B68729D11DBF00E56E2A /* Sources */,
+				4F01B68829D11DBF00E56E2A /* Frameworks */,
+				4F01B68929D11DBF00E56E2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F01B68D29D11DBF00E56E2A /* PBXTargetDependency */,
+			);
+			name = RECIMEUITests;
+			productName = RECIMEUITests;
+			productReference = 4F01B68B29D11DBF00E56E2A /* RECIMEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F01B66929D11DBE00E56E2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					4F01B67029D11DBE00E56E2A = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					4F01B68029D11DBF00E56E2A = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 4F01B67029D11DBE00E56E2A;
+					};
+					4F01B68A29D11DBF00E56E2A = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 4F01B67029D11DBE00E56E2A;
+					};
+				};
+			};
+			buildConfigurationList = 4F01B66C29D11DBE00E56E2A /* Build configuration list for PBXProject "RECIME" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F01B66829D11DBE00E56E2A;
+			packageReferences = (
+				4F9A2F4229D1656F009B6E94 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 4F01B67229D11DBE00E56E2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F01B67029D11DBE00E56E2A /* RECIME */,
+				4F01B68029D11DBF00E56E2A /* RECIMETests */,
+				4F01B68A29D11DBF00E56E2A /* RECIMEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F01B66F29D11DBE00E56E2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F01B67C29D11DBF00E56E2A /* Preview Assets.xcassets in Resources */,
+				4F9A2F4E29D17008009B6E94 /* recipes.json in Resources */,
+				4F01B67929D11DBF00E56E2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F01B67F29D11DBF00E56E2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F01B68929D11DBF00E56E2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F01B66D29D11DBE00E56E2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9A2F4C29D16D14009B6E94 /* RecipeListViewModel.swift in Sources */,
+				4F9A2F5A29D1837B009B6E94 /* SpinnerView.swift in Sources */,
+				4F9A2F5F29D192E5009B6E94 /* Difficulty.swift in Sources */,
+				4F01B67729D11DBE00E56E2A /* RecipeListView.swift in Sources */,
+				4F9A2F5629D17417009B6E94 /* Recipe.swift in Sources */,
+				4F01B69F29D1514900E56E2A /* RecipeViewCell.swift in Sources */,
+				4F9A2F5429D1722F009B6E94 /* ReviewListService.swift in Sources */,
+				4F01B67529D11DBE00E56E2A /* RECIMEApp.swift in Sources */,
+				4F9A2F5829D17D23009B6E94 /* ViewState.swift in Sources */,
+				4F9A2F5229D17104009B6E94 /* DecoderHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F01B67D29D11DBF00E56E2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F01B68629D11DBF00E56E2A /* RECIMETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F01B68729D11DBF00E56E2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F01B69029D11DBF00E56E2A /* RECIMEUITests.swift in Sources */,
+				4F01B69229D11DBF00E56E2A /* RECIMEUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F01B68329D11DBF00E56E2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F01B67029D11DBE00E56E2A /* RECIME */;
+			targetProxy = 4F01B68229D11DBF00E56E2A /* PBXContainerItemProxy */;
+		};
+		4F01B68D29D11DBF00E56E2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F01B67029D11DBE00E56E2A /* RECIME */;
+			targetProxy = 4F01B68C29D11DBF00E56E2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F01B69329D11DBF00E56E2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F01B69429D11DBF00E56E2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F01B69629D11DBF00E56E2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RECIME/Preview Content\"";
+				DEVELOPMENT_TEAM = H9MVH9P98J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin.recipeme.RECIME;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F01B69729D11DBF00E56E2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RECIME/Preview Content\"";
+				DEVELOPMENT_TEAM = H9MVH9P98J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin.recipeme.RECIME;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F01B69929D11DBF00E56E2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9MVH9P98J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin.recipeme.RECIMETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RECIME.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RECIME";
+			};
+			name = Debug;
+		};
+		4F01B69A29D11DBF00E56E2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9MVH9P98J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin.recipeme.RECIMETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RECIME.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RECIME";
+			};
+			name = Release;
+		};
+		4F01B69C29D11DBF00E56E2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9MVH9P98J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin.recipeme.RECIMEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RECIME;
+			};
+			name = Debug;
+		};
+		4F01B69D29D11DBF00E56E2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9MVH9P98J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin.recipeme.RECIMEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RECIME;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F01B66C29D11DBE00E56E2A /* Build configuration list for PBXProject "RECIME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F01B69329D11DBF00E56E2A /* Debug */,
+				4F01B69429D11DBF00E56E2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F01B69529D11DBF00E56E2A /* Build configuration list for PBXNativeTarget "RECIME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F01B69629D11DBF00E56E2A /* Debug */,
+				4F01B69729D11DBF00E56E2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F01B69829D11DBF00E56E2A /* Build configuration list for PBXNativeTarget "RECIMETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F01B69929D11DBF00E56E2A /* Debug */,
+				4F01B69A29D11DBF00E56E2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F01B69B29D11DBF00E56E2A /* Build configuration list for PBXNativeTarget "RECIMEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F01B69C29D11DBF00E56E2A /* Debug */,
+				4F01B69D29D11DBF00E56E2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F9A2F4229D1656F009B6E94 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F9A2F4329D1656F009B6E94 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F9A2F4229D1656F009B6E94 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4F01B66929D11DBE00E56E2A /* Project object */;
+}

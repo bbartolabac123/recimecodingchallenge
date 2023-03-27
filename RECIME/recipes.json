@@ -1,0 +1,45 @@
+[
+{
+  "id": 1,
+  "position": 5,
+  "title": "Vegan Burger 5",
+  "image_url": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+  "difficulty": "easy"
+},
+{
+  "id": 2,
+  "position": 6,
+  "title": "Vegan Burger 6",
+  "image_url": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+  "difficulty": "easy"
+},
+{
+  "id": 3,
+  "position": 2,
+  "title": "Vegan Burger 2",
+  "image_url": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+  "difficulty": "easy"
+},
+{
+  "id": 4,
+  "position": 4,
+  "title": "Vegan Burger 4",
+  "image_url": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+  "difficulty": "hard"
+},
+{
+  "id": 5,
+  "position": 3,
+  "title": "Vegan Burger 3",
+  "image_url": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+  "difficulty": "hard"
+},
+{
+  "id": 6,
+  "position": 1,
+  "title": "Vegan Burger 1",
+  "image_url": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+  "difficulty": "medium"
+}
+]
+
